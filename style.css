@@ -8,14 +8,10 @@
 body{ 
     background-color: rgb(235, 225, 232);
     display: flex;
-    /* horizontally center */
     justify-content: center;
-    /* vertically center but doesn't work because we does not define a height */
     align-items: center;
     font-family: 'Montserrat',sans-serif;
-    /* 100vh is a full display height */
     height:100vh;
-    /* To certerize the content */
     margin: 0 auto;
 }
 .container{
@@ -28,7 +24,6 @@ body{
     overflow: hidden;
     box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0px 10px 10px rgba(0,0,0,0.22);
 }
-/* this box willbe stick in above box */
 .form{
     position: absolute;
     top:0%;
@@ -38,17 +33,14 @@ body{
 .signup{
     left:0%;
     width:50%;
-    /* for stacking containers */
     z-index: 1;
     opacity: 0;
 }
 form{
     background-color: white;
     display: flex;
-    /* vertically center */
     align-items: center;
     justify-content: center;
-    /* one by one */
     flex-direction: column;
     padding: 0 50px ;
     height:100%;
@@ -143,7 +135,6 @@ button{
     height: 100%;
     width:50%;
     transform: translateX(0);
-    /* for smooth sliding */
     transition: transform 0.6s ease-in-out;
 }
 .overlay-left{
@@ -167,7 +158,6 @@ p{
     letter-spacing: .5px;
     margin: 20px 0 30px;
 }
-/* if right panel is active signin container is moving */
 .container.right-panel-active .signin{
     transform:translateX(100%);
 }
